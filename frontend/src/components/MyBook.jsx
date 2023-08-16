@@ -24,7 +24,7 @@ const MyBooks = () => {
   const handleDeleteBook = async (bookId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/books/deletebook/${bookId}`,
+        `https://reactdeploy-429c.onrender.com/books/${bookId}`,
         {
           method: "DELETE",
         }

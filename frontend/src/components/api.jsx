@@ -10,7 +10,7 @@ export const fetchBooks = async (sortCriteria, selectedGenre) => {
       queryParams.append("filter", selectedGenre);
     }
 
-    const response = await fetch(`http://localhost:8080/books?${queryParams}`);
+    const response = await fetch(`https://reactdeploy-429c.onrender.com/books`);
     const data = await response.json();
     return data.data;
   } catch (error) {
